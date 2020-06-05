@@ -22,8 +22,8 @@ namespace ComisionesDU
            
         private void Form1_Load(object sender, EventArgs e)
         {
-            c.actualizar();
-            c.cargarComisiones(DgvComisiones);
+            c.Actualizar();
+            c.CargarComisiones(DgvComisiones);
             DgvComisiones.AllowUserToResizeColumns = true;
             DgvComisiones.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             DgvComisiones.Columns[0].Resizable = DataGridViewTriState.True;
@@ -149,9 +149,9 @@ namespace ComisionesDU
             decimal d02 = Convert.ToDecimal(textDiasCobroDentroPeriodo.Text);
             decimal d03 = (Convert.ToDecimal(textPorcCobroFueraPeriodo.Text)/100);
             decimal d04 = Convert.ToDecimal(textDiasCobroFueraPeriodo.Text);
-            c.guardar( id,d01,d02,d03,d04);
-            c.actualizar();
-            c.cargarComisiones(DgvComisiones);
+            c.Guardar( id,d01,d02,d03,d04);
+            c.Actualizar();
+            c.CargarComisiones(DgvComisiones);
             textCasa.Text = "";
             textid.Text = "";
             textPorcCobroDentroPeriodo.Text = "0";

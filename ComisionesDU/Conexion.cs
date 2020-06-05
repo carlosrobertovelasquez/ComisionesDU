@@ -14,7 +14,7 @@ namespace ComisionesDU
     {
         SqlConnection cn;
         SqlCommand cmd;
-        SqlDataReader dr;
+       // SqlDataReader dr;
         SqlDataAdapter da;
         DataTable dt;
         
@@ -22,8 +22,8 @@ namespace ComisionesDU
         public Conexion()
         {
 
-            cn = new SqlConnection("Data Source=SRV01;Initial Catalog=DRO_UNI_;Persist Security Info=False;Pwd=DU$an$ivar;User ID=sa");
-            //cn = new SqlConnection("Data Source=LAPTOP;Initial Catalog=COAGRO2;User ID=sa;Password=master#$2016");
+            //cn = new SqlConnection("Data Source=SRV01;Initial Catalog=SOFTLAND;Persist Security Info=False;Pwd=DU$an$ivar;User ID=sa");
+            cn = new SqlConnection("Data Source=SRV01;Initial Catalog=SOFTLAND;User ID=sa;Password=DU$an$ivar");
 
             if (cn.State == ConnectionState.Closed)
                 {
@@ -36,7 +36,7 @@ namespace ComisionesDU
 
    
 
-        public void cargarComisiones(DataGridView dgv)
+        public void CargarComisiones(DataGridView dgv)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace ComisionesDU
             }
         }
 
-        public void guardar( int _id,decimal _PorcCobroDentroPeriodo,decimal _DiasCobroDentroPeriodo,decimal _PorcCobroFueraPeriodo,decimal _DiasCobroFueraPeriodo)
+        public void Guardar( int _id,decimal _PorcCobroDentroPeriodo,decimal _DiasCobroDentroPeriodo,decimal _PorcCobroFueraPeriodo,decimal _DiasCobroFueraPeriodo)
         {
             try
             {
@@ -84,7 +84,7 @@ namespace ComisionesDU
             }
         }
 
-        public void actualizar()
+        public void Actualizar()
         {
             try
             {
@@ -94,7 +94,7 @@ namespace ComisionesDU
                 }
 
 
-                string sql = "insert into DRO_UNI.tabla_comisiones(Clasificacion ,Descripcion) select CLASIFICACION, DESCRIPCION from CINCOH.CLASIFICACION where CLASIFICACION  not in(select Clasificacion from cincoh.tabla_comisiones ) and AGRUPACION = 3";
+                string sql = "insert into DRO_UNI.tabla_comisiones(Clasificacion ,Descripcion) select CLASIFICACION, DESCRIPCION from DRO_UNI.CLASIFICACION where CLASIFICACION  not in(select Clasificacion from DRO_UNI.tabla_comisiones ) and AGRUPACION = 3";
                 cmd = new SqlCommand(sql, cn);
                 cmd.ExecuteNonQuery();
                 cn.Close();

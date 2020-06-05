@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComisionesDU", "ComisionesDU\ComisionesDU.csproj", "{0A89123B-C4C3-4A10-B941-1A32EF3A9429}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador", "Instalador\Instalador.vdproj", "{03E7CD02-A8CB-428A-88D0-43D61338DAE4}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InstalacionComisionesDU", "InstalacionComisionesDU\InstalacionComisionesDU.vdproj", "{9B8BBE0C-6CD3-4F9A-B610-5757E0D6AA98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{0A89123B-C4C3-4A10-B941-1A32EF3A9429}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A89123B-C4C3-4A10-B941-1A32EF3A9429}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A89123B-C4C3-4A10-B941-1A32EF3A9429}.Release|Any CPU.Build.0 = Release|Any CPU
-		{03E7CD02-A8CB-428A-88D0-43D61338DAE4}.Debug|Any CPU.ActiveCfg = Debug
-		{03E7CD02-A8CB-428A-88D0-43D61338DAE4}.Release|Any CPU.ActiveCfg = Release
+		{9B8BBE0C-6CD3-4F9A-B610-5757E0D6AA98}.Debug|Any CPU.ActiveCfg = Debug
+		{9B8BBE0C-6CD3-4F9A-B610-5757E0D6AA98}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
